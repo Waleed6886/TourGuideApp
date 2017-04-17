@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">TourGuideApp</string>
+    <string name="riyadh">Riyadh</string>
+    <string name="jeddah">Jeddah</string>
+    <string name="khobar">Khobar</string>
+    <string name="mecca">Mecca</string>
+    <string name="saudiArabia">Saudi Arabia</string>
+
+    //Activity
+    <string name="restaurant">Restaurant</string>
+    <string name="cityInformation">Information</string>
+    <string name="event">Event</string>
+    <string name="historicalSite">HistoricalSite</string>
+
+
+
+    //event
+    <string name="e1">Kenkan Carnival</string>
+    <string name="e11">Al Hokair Land,Riyadh</string>
+    <string name="e2">Future Landscape</string>
+    <string name="e22">Mövenpick Hotel Riyadh,Riyadh</string>
+    <string name="e3">A night in Sardinia</string>
+    <string name="e33">Azzurro at The Ritz-Carlton, Riyadh</string>
+    <string name="e4">Vanilla Riyadh</string>
+    <string name="e44">Riyadh International Convention and Exhibition Center, Riyadh</string>
+    <string name="h1">Masmak Fortress</string>
+    <string name="h2">Madain Saleh</string>
+    <string name="h3">Qassim</string>
+    <string name="h4">Edge of the World</string>
+    <string name="r1">Najd Village</string>
+    <string name="r2">The Butcher Shop</string>
+    <string name="r3">KFC</string>
+    <string name="r4">Hamburgini</string>
+    <string name="i1">6.507 million</string>
+    <string name="i11">Population in Riyadh</string>
+    <string name="i22">1,554 km²</string>
+    <string name="i2">Area</string>
+</resources>
