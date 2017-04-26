@@ -4,14 +4,14 @@
     android:layout_height="wrap_content">
 
     <LinearLayout
+        android:id="@+id/card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/card_blue"
         android:clickable="true"
         android:gravity="center"
         android:orientation="horizontal"
-        android:padding="10dp"
-        android:id="@+id/card">
+        android:padding="10dp">
 
         <ImageView
             android:id="@+id/imageList"

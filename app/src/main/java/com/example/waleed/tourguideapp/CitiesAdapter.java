@@ -11,44 +11,50 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class CitiesAdapter extends FragmentPagerAdapter {
     Context mContext;
-    private Event event;
-    private HistoricalSite historicalSite;
-    private CityInformation cityInformation;
-    private Restaurant restaurant;
-    public CitiesAdapter(FragmentManager fm , Context mContext) {
+    private EventFragment eventFragment;
+    private HistoricalSiteFragment historicalSiteFragment;
+    private CityInformationFragment cityInformationFragment;
+    private RestaurantFragment restaurantFragment;
+
+    public CitiesAdapter(FragmentManager fm, Context mContext) {
         super(fm);
         this.mContext = mContext;
-        event = new Event();
-        historicalSite = new HistoricalSite();
-        cityInformation = new CityInformation();
-        restaurant = new Restaurant();
+        eventFragment = new EventFragment();
+        historicalSiteFragment = new HistoricalSiteFragment();
+        cityInformationFragment = new CityInformationFragment();
+        restaurantFragment = new RestaurantFragment();
     }
 
     @Override
     public Fragment getItem(int position) {
-        switch (position){
-            case 0:return event;
-            case 1:return historicalSite;
-            case 2:return cityInformation;
-            case 3:return restaurant;
-            default:return event;
+        switch (position) {
+            case 0:
+                return eventFragment;
+            case 1:
+                return historicalSiteFragment;
+            case 2:
+                return cityInformationFragment;
+            case 3:
+                return restaurantFragment;
+            default:
+                return eventFragment;
         }
     }
 
-    public Event getEvent() {
-        return event;
+    public EventFragment getEventFragment() {
+        return eventFragment;
     }
 
-    public HistoricalSite getHistoricalSite() {
-        return historicalSite;
+    public HistoricalSiteFragment getHistoricalSiteFragment() {
+        return historicalSiteFragment;
     }
 
-    public CityInformation getCityInformation() {
-        return cityInformation;
+    public CityInformationFragment getCityInformationFragment() {
+        return cityInformationFragment;
     }
 
-    public Restaurant getRestaurant() {
-        return restaurant;
+    public RestaurantFragment getRestaurantFragment() {
+        return restaurantFragment;
     }
 
     @Override

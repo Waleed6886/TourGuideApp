@@ -2,7 +2,6 @@ package com.example.waleed.tourguideapp;
 
 import android.graphics.Color;
 import android.os.Build;
-import android.support.annotation.RequiresApi;
 import android.support.design.widget.TabLayout;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
@@ -46,26 +45,26 @@ public class MainActivity extends AppCompatActivity {
                 public void onTabSelected(TabLayout.Tab tab) {
                     switch (tab.getPosition()) {
                         case 0:
-                            if(adapter.getEvent().getView()!=null)
-                            animateView(adapter.getEvent().getView());
+                            if (adapter.getEventFragment().getView() != null)
+                                animateView(adapter.getEventFragment().getView());
                             changeStatusBarColor(R.color.colorPrimaryDark);
                             getSupportActionBar().setBackgroundDrawable(getResources().getDrawable(R.drawable.blue, null));
                             break;
                         case 1:
-                            if(adapter.getHistoricalSite().getView()!=null)
-                                animateView(adapter.getHistoricalSite().getView());
+                            if (adapter.getHistoricalSiteFragment().getView() != null)
+                                animateView(adapter.getHistoricalSiteFragment().getView());
                             changeStatusBarColor(R.color.darkRed);
                             getSupportActionBar().setBackgroundDrawable(getResources().getDrawable(R.drawable.red, null));
                             break;
                         case 2:
-                            if(adapter.getCityInformation().getView()!=null)
-                                animateView(adapter.getCityInformation().getView());
+                            if (adapter.getCityInformationFragment().getView() != null)
+                                animateView(adapter.getCityInformationFragment().getView());
                             changeStatusBarColor(R.color.darkGreen);
                             getSupportActionBar().setBackgroundDrawable(getResources().getDrawable(R.drawable.green, null));
                             break;
                         case 3:
-                            if(adapter.getRestaurant().getView()!=null)
-                                animateView(adapter.getRestaurant().getView());
+                            if (adapter.getRestaurantFragment().getView() != null)
+                                animateView(adapter.getRestaurantFragment().getView());
                             changeStatusBarColor(R.color.darkYellow);
                             getSupportActionBar().setBackgroundDrawable(getResources().getDrawable(R.drawable.yellow, null));
                             break;
@@ -93,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void animateView(View v){
+    private void animateView(View v) {
         v.setAlpha(0);
         v.animate().alpha(1).setDuration(700);
     }

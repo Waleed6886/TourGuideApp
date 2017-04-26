@@ -25,9 +25,9 @@ public class TownAdapter extends ArrayAdapter<Town> {
     private int cardBackground;
 
 
-    public TownAdapter (Context context, ArrayList object,int cardBackground){
+    public TownAdapter(Context context, ArrayList object, int cardBackground) {
 
-       super (context, 0, object);
+        super(context, 0, object);
         townArrayList = object;
         this.cardBackground = cardBackground;
 
@@ -39,6 +39,7 @@ public class TownAdapter extends ArrayAdapter<Town> {
         int count = townArrayList.size();
         return count;
     }
+
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -49,7 +50,7 @@ public class TownAdapter extends ArrayAdapter<Town> {
 
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-        v = inflater.inflate(R.layout.blue_print, parent,false);
+        v = inflater.inflate(R.layout.blue_print, parent, false);
 
         card = (LinearLayout) v.findViewById(R.id.card);
         card.setBackgroundResource(cardBackground);
